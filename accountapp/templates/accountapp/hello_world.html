@@ -7,10 +7,13 @@
 
         <form action="/accounts/hello_world/" method="post">
             {% csrf_token %}
-            <input class="px-5 btn btn-success rounded-pill" type="submit"/>
+            <input type="text" name="hello_world_input" placeholder="What is your name?">
+            <input type="submit" class="px-5 btn btn-success rounded-pill">
         </form>
 
-        <h3>{{ text }}</h3>
+        {% for hello_world in hello_world_list %}
+            <h3>{{ hello_world.text }}</h3>
+        {% endfor %}
     </div>
 
 {% endblock %}

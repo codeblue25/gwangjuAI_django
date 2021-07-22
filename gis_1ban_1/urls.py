@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('accountapp.urls'))
+    path('accounts/', include('accountapp.urls')),
+    path('profiles/', include ('profileapp.urls')),  # profiles 안에있는 profilesapp의 urls으로 하위분기하라
 ]

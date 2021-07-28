@@ -18,3 +18,14 @@
     max-width: 500px;
     margin: 1rem 1.5rem;
 }
+
+.profile_image {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;  /*사진크기와 상관없이 중앙 중심으로 절삭*/
+}
+
+.NNS_B {
+    font-family: 'NanumSquareB', cursive;
+}

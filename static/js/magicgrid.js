@@ -275,11 +275,11 @@ MagicGrid.prototype.listen = function listen () {
 };
 
 let magicGrid = new MagicGrid({
-            container: '.container',
-            animate: true,
-            gutter: 30,
-            static: true,
-            useMin: true
+  container: '.container',
+  animate: true,
+  gutter: 12,  /* 모바일 버전에서 그리드 간 마진 크기 조정 */
+  static: true,
+  useMin: true
 });
 
 var masonrys = document.getElementsByTagName('img')

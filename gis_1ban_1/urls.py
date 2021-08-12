@@ -26,5 +26,6 @@ urlpatterns = [
     path('profiles/', include ('profileapp.urls')),  # profiles 안에있는 profilesapp의 urls으로 하위분기하라
     path('articles/', include ('articleapp.urls')),
     path('comments/', include('commentapp.urls')),
+    path('projects/', include('projectapp.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # 임시 이미지 경로 설정

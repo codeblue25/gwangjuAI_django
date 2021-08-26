@@ -27,7 +27,7 @@
                  alt=""
                  class="article_image">
             <div class="article_content">
-                {{ target_article.content }}
+                {{ target_article.content | safe }}  {# 안전한 html 태그들을 적용해줌 #}
             </div>
 
             {% if target_article.writer == user %}

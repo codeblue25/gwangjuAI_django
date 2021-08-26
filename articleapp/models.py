@@ -10,7 +10,7 @@ class Article(models.Model):
                                related_name='article', null=True) # 1대 다로 테이블을 연결
 
     project = models.ForeignKey(Project, on_delete=models.SET_NULL,
-                                related_name='article', null=True)
+                                related_name='article', null=True, blank=True)
 
     title = models.CharField(max_length=200, null=True)
 
